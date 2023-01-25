@@ -1,0 +1,24 @@
+web safe fonts list
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+
+html entities list 
+https://unicode-table.com/en/html-entities/
+
+FOR ICONS
+https://www.iconfinder.com/
+
+for images
+gettyimages.com 
+
+
+for random images 
+https://picsum.photos/
+example 
+ <img src="https://picsum.photos/300" />
+
+ for box shadow example 
+ https://getcssscan.com/css-box-shadow-examples
+
+
+ for html, css, javascript 
+ https://developer.mozilla.org
