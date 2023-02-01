@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Register with us</h1> <hr>
+    <form method="post" action="success.html" enctype="multipart/form-data">
+        <table border="2" width="50%" align="center" cellpadding="10">
+            
+            <tr>
+                <td>
+                    <input type="text" name="fullname" placeholder=" Enter fullname" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="email address" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="password" placeholder="password" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select birthdate</b> <br>
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="pincode" placeholder="City pincode" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" name="mobile" placeholder="Mobile No" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select Photo</b> <br>
+                    <input type="file" name="photo" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select gender</b> <br>
+                    <label for="male">
+                        <input id="male" type="radio" name="gender" value="1" />Male 
+                    </label><br>
+                    <label for="female">
+                        <input id="female" type="radio" name="gender" value="0" />Female 
+                    </label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select language you can speak, read, write</b> <br>
+                    <label for="gujarati">
+                        <input type="checkbox" id="gujarati" value="1" /> Gujarati
+                    </label> 
+                    <br/>
+                    <label for="hindi">
+                        <input type="checkbox" id="hindi" value="2" /> Hindi
+                    </label> 
+                    <br/>
+                    <label for="english">
+                        <input type="checkbox" id="english" value="4" /> English
+                    </label> 
+                    <br/>
+                    <label for="marathi">
+                        <input type="checkbox" id="marathi" value="8" /> Marathi
+                    </label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select state</b> <br>
+                    <select name="state">
+                        <option value="">select</option>
+                        <option value="1">Gujarat</option>
+                        <option value="2">Maharastra</option>
+                        <option value="3">Rajasthan</option>
+                        <option value="4">Madhya pradesh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>address</b> <br>
+                    <textarea name="address" cols="30" rows="10">
+
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" name="submit" value="submit your form">
+                    <input type="reset" name="reset" value="clear all">
+                    <input type="button" name="nothing" value="i cant do anything">
+                    <input type="hidden" name="secret" value="i am human">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
