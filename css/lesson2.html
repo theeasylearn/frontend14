@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin: 0px;
+            padding:0px;
+        }
+        .india 
+        {
+            background-color: #B3E3EE;
+            color:#2255A4;
+            background-image: url('images/india-logo.png');
+           
+        }
+        .australia
+        {
+            background-color: #ffcd00;
+            color:#00843d;
+            background-image: url('images/australia.png');
+          
+        }
+        .team 
+        {
+            display: flex;
+            gap: 20px;
+        }
+        .india, .australia
+        {
+            padding:10px 20px;
+            width:50%;
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 15px 15px 5px #eeeeee;
+            border-radius: 50px;
+        }
+        .team>div>h2
+        {
+            text-align: center;
+            font-size: 1.5em;
+            text-shadow: 5px 5px 5px #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>working with universal selector and class selector</h1>
+    <div class="team">
+        <div class="india">
+            <h2>India Cricket Team</h2>
+            <ul>
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <li>Player 3</li>
+                <li>Player 4</li>
+                <li>Player 5</li>
+                <li>Player 6</li>
+                <li>Player 7</li>
+                <li>Player 8</li>
+                <li>Player 9</li>
+                <li>Player 10</li>
+                <li>Player 11</li>
+            </ul>
+        </div>
+        <div class="australia">
+            <h2>Australia Cricket Team</h2>
+            <ul>
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <li>Player 3</li>
+                <li>Player 4</li>
+                <li>Player 5</li>
+                <li>Player 6</li>
+                <li>Player 7</li>
+                <li>Player 8</li>
+                <li>Player 9</li>
+                <li>Player 10</li>
+                <li>Player 11</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
