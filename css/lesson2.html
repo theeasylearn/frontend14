@@ -19,7 +19,7 @@
             background-color: #B3E3EE;
             color:#2255A4;
             background-image: url('images/india-logo.png');
-           
+            
         }
         .australia
         {
@@ -43,11 +43,34 @@
             box-shadow: 15px 15px 5px #eeeeee;
             border-radius: 50px;
         }
+        .australia
+        {
+            opacity: 0.50;
+        }
         .team>div>h2
         {
             text-align: center;
             font-size: 1.5em;
             text-shadow: 5px 5px 5px #bbbbbb;
+        }
+        .india>ul, .australia>ul
+        {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            /* list-style-type: none; */
+            list-style-image: url('images/player.png');
+        }
+        .india>ul>li, .australia>ul>li 
+        {
+            line-height: 200%;
+            border-bottom: 2px solid black;
+        }
+        .captain 
+        {
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -60,7 +83,7 @@
                 <li>Player 1</li>
                 <li>Player 2</li>
                 <li>Player 3</li>
-                <li>Player 4</li>
+                <li class="captain">Player 4</li>
                 <li>Player 5</li>
                 <li>Player 6</li>
                 <li>Player 7</li>
@@ -79,7 +102,7 @@
                 <li>Player 4</li>
                 <li>Player 5</li>
                 <li>Player 6</li>
-                <li>Player 7</li>
+                <li class="captain">Player 7</li>
                 <li>Player 8</li>
                 <li>Player 9</li>
                 <li>Player 10</li>
