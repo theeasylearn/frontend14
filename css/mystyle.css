@@ -1,0 +1,60 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+body 
+{
+    background-color: #F1F0EB;
+    color:#4056a1;
+}
+#header 
+{
+    background-color: #d79922;
+    display: flex;
+    justify-content: space-between; /* horizontal aligment */
+    position: sticky;
+    top:0px;
+}
+#footer 
+{
+    background-color: #efe2ba;
+    position:sticky;
+    bottom: 0px;
+    padding:20px 0px;
+    text-align: center;
+}
+#logo-title
+{
+    display: flex;
+    align-items: center; /* vertical aligment */
+}
+#menu 
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center; 
+}
+h1 
+{
+    font-size: 1.5em;
+    color:white;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+#menu>li>a:link 
+{
+    color:white;
+    padding:0px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#content
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
