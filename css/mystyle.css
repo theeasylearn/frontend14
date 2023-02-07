@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap');
 *
 {
     margin: 0px;
     padding: 0px;
     letter-spacing: 1px;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 body 
 {
@@ -37,19 +39,28 @@ body
     list-style-type: none;
     align-items: center; 
 }
-h1 
+#logo-title>h1 
 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color:white;
     text-transform: uppercase;
     margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+   
 }
-#menu>li>a:link 
+#menu>li>a:link , #menu>li>a:visited
 {
     color:white;
-    padding:0px 10px;
+    padding:10px 10px;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+#menu>li>a:hover
+{
+    background-color: white;
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 #content
 {
@@ -57,4 +68,11 @@ h1
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+#content>p 
+{
+    text-indent: 100px;
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 125%;
 }
