@@ -31,3 +31,6 @@ example
 
 for web fonts
  https://fonts.google.com/
+
+for css shadow
+https://getcssscan.com/css-box-shadow-examples
