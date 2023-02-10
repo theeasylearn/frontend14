@@ -3,3 +3,4 @@ google search - kamesh kotwani
 Auto Rename Tag - Jun Han
 Notepad++ keymap - Microsoft
 IntelliSense for CSS class names in HTML - Zignd
+Live Server - Ritwick Dey
