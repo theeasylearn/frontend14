@@ -21,7 +21,17 @@
             <li><a href="http://www.google.com">Contact us</a></li>
             <li><a href="http://www.apple.com">Privacy Policy</a></li>
         </ul>
-        <img id="menu-icon" src="images/menu.png"  />
+        <img id="menu-icon" width="100px" src="images/menu.png" onclick="ToggleMenu();" />
+    </div>
+    <div id="responsive-menu" class="invisible-menu">
+        <ul>
+            <li><a href="lesson1.html">Home</a></li>
+            <li><a href="lesson2.html">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="lesson4.html">Services</a></li>
+            <li><a href="http://www.google.com">Contact us</a></li>
+            <li><a href="http://www.apple.com">Privacy Policy</a></li>
+        </ul>
     </div>
     <div id="content">
        <div id="shop">
@@ -59,5 +69,20 @@
     <div id="footer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, inventore?</p>
     </div>
+<script>
+    //user defined function 
+    function ToggleMenu()
+    {
+        var ClassName = document.getElementById("responsive-menu").className;
+        if(ClassName=="invisible-menu")
+        {
+            document.getElementById("responsive-menu").className = "visible-menu";
+        }
+        else 
+        {
+            document.getElementById("responsive-menu").className = "invisible-menu";
+        }
+    }
+</script>
 </body>
 </html>

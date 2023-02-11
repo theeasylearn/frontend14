@@ -20,6 +20,10 @@ body
     position: sticky;
     top:0px;
 }
+#responsive-menu
+{
+    background-color: #d79922;
+}
 #menu-icon
 {
     display: none;
@@ -52,7 +56,16 @@ body
     font-family: 'Roboto Slab', serif;
    
 }
-#menu>li>a:link , #menu>li>a:visited
+.invisible-menu 
+{
+    display: none;
+}
+.visible-menu 
+{
+    display: block;
+}
+
+#menu>li>a:link , #menu>li>a:visited, #responsive-menu>ul>li>a:link, #responsive-menu>ul>li>a:visited
 {
     color:white;
     padding:10px 10px;
@@ -90,18 +103,6 @@ body
 {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.product:hover 
-{
-    /* @keyframes {
-        0% {
-            transform: perspective(400px) scaleX(1);
-        }
-    
-        100% {
-            transform: perspective(400px) scaleX(-1);
-        }
-    } */
 }
 .product>h3 
 {
@@ -201,4 +202,4 @@ body
         {
             display:initial;
         }
-      }
+    }
