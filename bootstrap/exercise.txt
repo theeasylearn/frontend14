@@ -1,0 +1,6 @@
+1) create responsive web page to display 6 player detail (Name,dob,Runs,Match,50s,100s,Average,).
+
+2) create responsive web page to display 6 course detail (Name,syllabus,Duration,fees).
+
+3) create responsive web page to display 4 Dish (Name,Description,Price).
+
