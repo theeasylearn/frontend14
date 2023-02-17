@@ -39,3 +39,5 @@ https://getcssscan.com/css-box-shadow-examples
 bootstrap official website 
 https://getbootstrap.com/
 
+for cheetsheet
+https://bootstrap-cheatsheet.themeselection.com/
