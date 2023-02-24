@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-12 offset-sm-1">
+                <div class="card  shadow">
+                    <div class="card-header text-bg-warning">
+                        <h3>Register</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                           <div class="row mb-3">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname">
+                                        <label for="surname" >Surname</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="name">
+                                        <label for="name" >name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="text" name="fathername" id="fathername" class="form-control" placeholder="Fathername">
+                                        <label for="surname" >Fathername</label>
+                                    </div>
+                                </div>
+                                
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                        <label for="email" >Email</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="password">
+                                        <label for="password" >password</label>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col-sm-7">
+                                    <b>Select Gender</b> <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="male" value="1" name="gender">
+                                        <label class="form-check-label" for="male">Male</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="female" value="0" name="gender">
+                                        <label class="form-check-label" for="female">female</label>
+                                      </div>
+                                    
+                                </div>
+                                <div class="col-sm-5">
+                                    <label for="photo" >Photo</label>
+                                    <input type="file" name="photo" id="photo" class="form-control">
+                                </div>
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col">
+                                    <b>Select Country</b> <br>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select counry</option>
+                                        <option value="1">India</option>
+                                        <option value="2">USA</option>
+                                        <option value="3">Britain</option>
+                                        <option value="4">France</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea">Comments</label>
+                                      </div>
+
+                                </div>
+                           </div>
+                           <div class="row">
+                            <div class="col-12">
+                                <p class="text-end">
+                                    <button type="submit" class="btn btn-warning">Create Account</button>
+                                    <button type="reset" class="btn btn-dark">Clear all</button>
+                                </p>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
+</body>
+</html>
