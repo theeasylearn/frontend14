@@ -1,0 +1,9 @@
+body
+{
+    background-color: red;
+}
+.feature 
+{
+    background-image: url('../images/garam-masala.jpg');
+    min-height: 500px;
+}

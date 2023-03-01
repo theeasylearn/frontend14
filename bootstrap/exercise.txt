@@ -4,3 +4,6 @@
 
 3) create responsive web page to display 4 Dish (Name,Description,Price).
 
+create one page website for dentist
+create one page website for lawyer
+create one page website for pre-school
