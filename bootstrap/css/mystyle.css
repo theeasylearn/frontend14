@@ -1,9 +1,22 @@
 body
 {
-    background-color: red;
 }
 .feature 
 {
     background-image: url('../images/garam-masala.jpg');
+    background-color: rgb(0, 0, 0);
+    opacity:0.5;
+}
+.textshadow 
+{
+    text-shadow: 5px 5px 5px black;
+    letter-spacing: 2px;
+}
+.dish
+{
+    background-image: url('../images/table.jpg');
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    opacity:0.6;
     min-height: 500px;
 }
