@@ -1,147 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <!-- menu -->
-    <nav class="navbar navbar-expand-xl bg-danger">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Kaka ka dhaba</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarBasic">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Link</a>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- menu -->
-    <!-- slider -->
-    <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
-            <div class="carousel-caption d-none d-sm-block">
-                <div class="display-1">Third slide label</div>
-                <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
-            <div class="carousel-caption d-none d-sm-block">
-                <div class="display-1">Third slide label</div>
-                <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
-            <div class="carousel-caption d-none d-sm-block">
-                <div class="display-1">Third slide label</div>
-                <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
+  <!-- menu -->
+  <nav class="navbar navbar-expand-xl bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Kaka ka dhaba</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
+        aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarBasic">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+
+        </ul>
       </div>
-    <!-- slider -->
-    <div class="container-fluid feature">
-        <div class="row">
-            <div class="col-12 my-3">
-                <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Speciality</div>
-            </div>
+    </div>
+  </nav>
+  <!-- menu -->
+  <!-- slider -->
+  <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="display-1">Third slide label</div>
+          <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
         </div>
-        <div class="row mb-3">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card shadow-lg">
-                  <div class="card-body">
-                      <div class="text-center">
-                        <i class="fa-sharp fa-solid fa-bowl-food fa-4x"></i>
-                      </div>
-                      <h3 class="text-center">Always Fresh Food</h3>
-                      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at! Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
-                  </div>
-              </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="display-1">Third slide label</div>
+          <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-sm-block">
+          <div class="display-1">Third slide label</div>
+          <div class="display-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  <!-- slider -->
+  <div class="container-fluid feature">
+    <div class="row">
+      <div class="col-12 my-3">
+        <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Speciality</div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <div class="text-center">
+              <i class="fa-sharp fa-solid fa-bowl-food fa-4x"></i>
+            </div>
+            <h3 class="text-center">Always Fresh Food</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at!
+              Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-            <div class="card shadow-lg">
-                <div class="card-body">
-                    <div class="text-center">
-                      <i class="fa-solid fa-mug-hot fa-4x"></i>
-                    </div>
-                    <h3 class="text-center">100% vegitarian</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at! Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
-                </div>
-            </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <div class="text-center">
+              <i class="fa-solid fa-mug-hot fa-4x"></i>
+            </div>
+            <h3 class="text-center">100% vegitarian</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at!
+              Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <div class="text-center">
+              <i class="fa-solid fa-truck-fast fa-4x"></i>
+            </div>
+            <h3 class="text-center">Quick parcel delivery</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at!
+              Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3 pb-3">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="mb-3 display-3 fw-bold text-uppercase">About us</div>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-6 col-12">
+        <img src="https://picsum.photos/350" class="img-fluid img-thumbnail shadow-lg" />
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-6 col-12">
+        <div class="card shadow">
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eos sapiente repellendus
+              architecto quisquam omnis placeat dolorum. Est, quia eos corrupti iusto optio excepturi praesentium illo
+              voluptatem deserunt eligendi placeat rem quisquam inventore vel officia minus perferendis veniam non
+              dolores dolorem? Quasi recusandae placeat amet, cumque maxime temporibus quod similique totam aut error at
+              unde modi ullam ad commodi odit officia accusamus dolores ipsa delectus atque quos magni explicabo iure?
+              In adipisci earum fugiat at id debitis atque nisi, iste vero dolores! Atque perferendis unde,
+              exercitationem asperiores nostrum suscipit accusamus necessitatibus. Harum eligendi delectus fugiat
+              asperiores quod nobis dignissimos!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid dish mt-3">
+    <div class="row">
+      <div class="col-12 my-3">
+        <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Menu</div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+            <div class="col-5 col-sm-4">
+              <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+            <div class="col-5 col-sm-4">
+              <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+            <div class="col-5 col-sm-4">
+              <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+            <div class="col-5 col-sm-4">
+              <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-5 col-sm-4">
+              <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <div class="card">
+          <div class="row g-0">
+          
+            <div class="col-7 col-sm-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paneer Tika</h5>
+                <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+                <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+              </div>
+            </div>
+            <div class="col-5 col-sm-4">
+              <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-6 col-12">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-5 col-sm-4">
+            <img src="images/punjabi-sabji.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+          </div>
+          <div class="col-7 col-sm-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Paneer Tika</h5>
+              <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+              <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-12">
+      <div class="card">
+        <div class="row g-0">
+        
+          <div class="col-7 col-sm-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Paneer Tika</h5>
+              <p class="card-text">Lorem ipsum adipisicing elit. Quod, laboriosam.</p>
+              <p class="card-text"><small class="btn btn-danger btn-sm">&#8377 250</small></p>
+            </div>
+          </div>
+          <div class="col-5 col-sm-4">
+            <img src="images/biryani.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-12 my-3">
+        <div class="fw-bold display-3 text-uppercase text-center">Book your table</div>
+      </div>
+    </div>
+      <div class="row">
+
+        <div class="col-12">
           <div class="card shadow-lg">
-              <div class="card-body">
-                  <div class="text-center">
-                    <i class="fa-solid fa-truck-fast fa-4x"></i>
-                  </div>
-                  <h3 class="text-center">Quick parcel delivery</h3>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae odio at! Suscipit repellat maiores sit quis, nobis repellendus magnam voluptate totam. </p>
+            <div class="row g-0">
+              <div class="col-12 col-sm-6">
+                <img src="images/booking.jpg" class="img-fluid w-100 h-100" alt="card-horizontal-image">
               </div>
-          </div>
-      </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <br>
-          </div>
-        </div>
-    </div>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-12 text-center">
-          <div class="mb-3 display-3 fw-bold text-uppercase">About us</div>
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-6 col-12">
-            <img src="https://picsum.photos/350" class="img-fluid img-thumbnail shadow-lg" />
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-6 col-12">
-            <div class="card shadow">
-              <div class="card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eos sapiente repellendus architecto quisquam omnis placeat dolorum. Est, quia eos corrupti iusto optio excepturi praesentium illo voluptatem deserunt eligendi placeat rem quisquam inventore vel officia minus perferendis veniam non dolores dolorem? Quasi recusandae placeat amet, cumque maxime temporibus quod similique totam aut error at unde modi ullam ad commodi odit officia accusamus dolores ipsa delectus atque quos magni explicabo iure? In adipisci earum fugiat at id debitis atque nisi, iste vero dolores! Atque perferendis unde, exercitationem asperiores nostrum suscipit accusamus necessitatibus. Harum eligendi delectus fugiat asperiores quod nobis dignissimos!</p>
+              <div class="col-12 col-sm-6">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Booking Detail</h5>
+                  <form action="" method="">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="fullname" placeholder="fullname">
+                      <label for="fullname">Full name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="mobile" placeholder="mobile">
+                      <label for="mobile">Mobile</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col">
+                          <div class="form-floating">
+                              <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname">
+                              <label for="surname" >Surname</label>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-floating">
+                              <input type="text" name="name" id="name" class="form-control" placeholder="name">
+                              <label for="name" >name</label>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-floating">
+                              <input type="text" name="fathername" id="fathername" class="form-control" placeholder="Fathername">
+                              <label for="surname" >Fathername</label>
+                          </div>
+                      </div>
+                      
+                 </div>
+                  </form>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid dish mt-3">
-      <div class="row">
-        <div class="col-12 my-3">
-            <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Menu</div>
-        </div>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
