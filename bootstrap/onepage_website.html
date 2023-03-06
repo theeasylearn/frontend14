@@ -13,7 +13,7 @@
 
 <body>
   <!-- menu -->
-  <nav class="navbar navbar-expand-xl bg-danger">
+  <nav class="navbar navbar-expand-xl bg-danger sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand text-white" href="#">Kaka ka dhaba</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
@@ -23,25 +23,25 @@
       <div class="collapse navbar-collapse show" id="navbarBasic">
         <ul class="navbar-nav me-auto mb-2 mb-xl-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-white" aria-current="page" href="#carouselWithIndicators">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Our Speciality</a>
+            <a class="nav-link text-white" href="#speciality">Our Speciality</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">About us</a>
+            <a class="nav-link text-white" href="#aboutus">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Our Menu</a>
+            <a class="nav-link text-white" href="#ourmenu">Our Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Book your table</a>
+            <a class="nav-link text-white" href="#bookyourtable">Book your table</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Food Gallary</a>
+            <a class="nav-link text-white" href="#foodgallary">Food Gallary</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact us</a>
+            <a class="nav-link text-white" href="#contactus">Contact us</a>
           </li>
         </ul>
       </div>
@@ -88,9 +88,9 @@
     </a>
   </div>
   <!-- slider -->
-  <div class="container-fluid feature">
+  <div id="speciality" class="container-fluid feature">
     <div class="row">
-      <div class="col-12 my-3">
+      <div class="col-12 my-5">
         <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Speciality</div>
       </div>
     </div>
@@ -138,7 +138,7 @@
       </div>
     </div>
   </div>
-  <div class="container mt-3 pb-3">
+  <div id="aboutus" class="container mt-3 pb-3">
     <div class="row">
       <div class="col-12 text-center">
         <div class="mb-3 display-3 fw-bold text-uppercase">About us</div>
@@ -162,7 +162,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid dish mt-3">
+  <div id="ourmenu" class="container-fluid dish mt-3">
     <div class="row">
       <div class="col-12 my-3">
         <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Menu</div>
@@ -379,7 +379,7 @@
       </div>
     </div>
   </div>
-  <div class="container my-3">
+  <div id="bookyourtable" class="container my-3">
     <div class="row">
       <div class="col-12 my-3">
         <div class="fw-bold display-3 text-uppercase text-center">Book your table</div>
@@ -441,7 +441,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid gallary">
+  <div id="foodgallary" class="container-fluid gallary">
     <div class="row">
       <div class="col-12 my-3">
         <div class="textshadow display-3 fw-bold text-white text-uppercase text-center">Our Food Gallary</div>
@@ -450,7 +450,7 @@
     <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
+              <div class="carousel-item active my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -461,7 +461,7 @@
                       </div>
                   </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -472,7 +472,7 @@
                       </div>
                   </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -483,7 +483,7 @@
                       </div>
                   </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -494,7 +494,7 @@
                       </div>
                   </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -505,7 +505,7 @@
                       </div>
                   </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item my-carousel-item">
                   <div class="col-md-3">
                       <div class="card">
                           <div class="card-img">
@@ -528,7 +528,7 @@
       </div>
   </div>
   </div>
-  <div class="container-fluid mt-3">
+  <div id="contactus" class="container-fluid mt-3">
     <div class="row">
       <div class="row">
         <div class="col-12 my-3">
@@ -571,8 +571,9 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
   <script>
-    let items = document.querySelectorAll('.carousel .carousel-item')
+    let items = document.querySelectorAll('.carousel .my-carousel-item')
 
     items.forEach((el) => {
         const minPerSlide = 4
@@ -587,6 +588,15 @@
             next = next.nextElementSibling
         }
     })
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    var divid =  $(this).attr('href');
+    $(divid).css('padding-top','50px');
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    },1000);
+});
 </script>
 </body>
 
