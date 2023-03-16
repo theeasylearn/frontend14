@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, div 
+        {
+            background-color: cyan;
+            color:blue;
+            padding: 10px;
+            border:2px solid black;
+            font-size: 2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of document.getElementById()</h1>
+    <h2>value property example</h2>
+    <hr/>
+    <form>
+        <table border="2" width="50%" align="center">
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" id="email" placeholder="email" value="theeasylearn@gmail.com" >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="output"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        //change content of tag
+        var email_address = document.getElementById("email").value;
+        document.getElementById("output").innerHTML = email_address;
+        document.getElementById("email").value = "ankit3385@gmail.com";
+    </script>
+</body>
+</html>
