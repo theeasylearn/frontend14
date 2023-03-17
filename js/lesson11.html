@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example of functions</h1> <hr/>
+    <table border="2" align="center" width="50%">
+        <tr>
+            <td>Pi Value</td>
+            <td id="pi"></td>
+        </tr>
+        <tr>
+            <td>Qube of five</td>
+            <td id="qube"></td>
+        </tr>
+        <tr>
+            <td>Current Date and time</td>
+            <td id="currentdatetime"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        //create user defined function 
+        //1st technique
+        //with return value without argument
+        function getPi()
+        {
+            //local variable 
+            let pi = 3.14;
+            return pi;
+        }
+         //with return value with argument
+        function getQube(number)
+        {
+            number = Math.abs(number);
+            let qube = number * number * number;
+            return qube;
+        }
+         //without return value without argument
+        function showCurrentDateTime()
+        {
+            let date = new Date();
+            let datetime = date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
+            html('currentdatetime',datetime); //call/execute/run
+        }
+        //without return value with argument
+        function html(id,message)
+        {
+            document.getElementById(id).innerHTML = message;
+        }
+
+        showCurrentDateTime(); //calling function
+        var pi = getPi(); //calling function
+        html('pi',pi);  //calling function
+        var result = getQube(-15);  //calling function
+        html('qube',result);  
+    </script>
+</body>
+</html>
