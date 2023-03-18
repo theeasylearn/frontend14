@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Example of functions</h1> <hr/>
+    <h1>Example of functions (2nd method)</h1>
+    <hr />
     <table border="2" align="center" width="50%">
         <tr>
             <td>Pi Value</td>
@@ -28,39 +31,35 @@
     </table>
     <script>
         //create user defined function 
-        //1st technique
+        //2nd technique
         //with return value without argument
-        function getPi()
-        {
-            //local variable 
-            let pi = 3.14;
-            return pi;
-        }
-         //with return value with argument
-        function getQube(number)
-        {
+        let  getPi = () => 3.14; //arrow function 
+        //with return value with argument
+        let getQube = function(number){
             number = Math.abs(number);
             let qube = number * number * number;
             return qube;
         }
-         //without return value without argument
-        function showCurrentDateTime()
-        {
+
+        //without return value without argument
+        let showCurrentDateTime = function(){
             let date = new Date();
             let datetime = date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
-            html('currentdatetime',datetime); //call/execute/run
-        }
-        //without return value with argument
-        function html(id,message)
-        {
-            document.getElementById(id).innerHTML = message;
+            html('currentdatetime', datetime); //call/execute/run
         }
 
+        //without return value with argument
+        // let html = function(id,message){
+        //     document.getElementById(id).innerHTML = message;
+        // }
+        //arrow function 
+        let html = (id,message) => document.getElementById(id).innerHTML = message;
         showCurrentDateTime(); //calling function
         var pi = getPi(); //calling function
-        html('pi',pi);  //calling function
+        html('pi', pi);  //calling function
         var result = getQube(-15);  //calling function
-        html('qube',result);  
+        html('qube', result);  
     </script>
 </body>
+
 </html>
