@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Default argument function</h1> <hr/>
+    <p id="output">
+
+    </p>
+    <script src="myscript.js"></script>
+    <script>
+        let getInterest = function (amount,rate=12,year=1){
+            let interest = (amount * rate * year) / 100;
+            return interest;
+        }
+        html('output','<h3>example of default argument function</h3>')
+        html('output','<b>let us see how it work</b>',true)
+        html('output','<br/> with one argument = ' + getInterest(1000),true)
+        html('output','<br/> with two argument = ' + getInterest(1000,24),true)
+        html('output','<br/> with three argument = ' + getInterest(1000,24,5),true)
+    </script>
+</body>
+</html>
