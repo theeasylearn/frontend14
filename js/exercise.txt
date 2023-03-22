@@ -1,3 +1,6 @@
 1) create web page which has javascript to accept two number from user using prompt and then calculate result of addition, substraction, multiplication, division and display it in web page using write method.
 
 2) create web page which has javascript to accept two three values (amount,rate,year) from user using prompt and then calculate simple interest and display it in web page using write method.
+
+
+3) create web page which has javascript to accept two  numeric values using html input tag and then calculate result of addition, substraction, multiplication, division and display it in web page using in some tag. use 1st method to handle event. there are four button one for each operations

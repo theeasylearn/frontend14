@@ -9,3 +9,4 @@ let html = function (id,message,isAdd=false) {
         document.getElementById(id).innerHTML += message;
     }
 }
+let val = (id) => document.getElementById(id).value;
