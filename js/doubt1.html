@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Condition Operators & Nullish coalescing operator </h1>
+    <script>
+        var num = prompt("Enter number",'1');
+        num = parseInt(num);
+        // var message = null;
+        // if (num>=18)
+        // {
+        //     message = "you are eligble for voting";
+        // }
+        // else
+        // {
+        //     message = "you are not eligible for voting";
+        // }
+        var message = (num>=18) ? "you are eligble for voting" : "you are not eligible for voting";
+
+        alert(message);
+        function getdata()
+        {
+            var name = 'ankit m patel';
+            return name;
+        }
+        let user=null;
+        // if(user==null)
+        // {
+        //     user = getdata();
+        //     alert(user);
+        // }
+        // else 
+        // {
+        //     alert(user);
+        // }
+        alert(user ?? getdata());
+    </script>
+</body>
+</html>

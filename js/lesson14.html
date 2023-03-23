@@ -47,8 +47,10 @@
             {
                 result = '<br/> result of qube is ' + (num1 * num1 * num1);
             }
+            // document.getElementById('output').innerHTML += result;
+            html('output',result);
             console.log(result);
-            html('output',result,true)
+          
         }
     </script>
 </body>
