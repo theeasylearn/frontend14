@@ -4,3 +4,7 @@
 
 
 3) create web page which has javascript to accept two  numeric values using html input tag and then calculate result of addition, substraction, multiplication, division and display it in web page using in some tag. use 1st method to handle event. there are four button one for each operations
+
+4) create web page which has javascript to accept height, width, and length of room from user using input tag & bootstrap, handle onsubmit event and check all inputs are valid or nor not. if valid calculate and display volume of room otherwise display error.
+
+5) create web page which has javascript to pan card and aadhar card  if valid then allow use to see other page other wise display error message. 
