@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Handling (1st method)</h1> <hr>
+    <form action="">
+        <table border="2" align="center" cellpadding="10">
+            <tr>
+                <td>
+                    <input type="number" name="num1" id="num1" placeholder="enter number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="get square" id="square"> 
+                    <input type="button" value="get qube" id="qube" > 
+                </td>
+            </tr>
+            <tr>
+                <td id="output">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="myscript.js"></script>
+    <script>
+        var square = document.getElementById("square");
+        var qube = document.getElementById("qube");
+        square.onclick = function()
+        {
+            // alert("square");
+            Calculate(this.id,this.value);
+        }
+        qube.onclick = function(){
+            // alert("qube");
+            Calculate(this.id,this.value);
+        }
+        function Calculate(ButtonId,value)
+        {
+            // alert("button clicked...");
+            // console.log(ButtonId,event,value);
+            var num1 = parseInt(val('num1'));
+            // console.log(num1);
+            var result = null;
+            if(ButtonId=="square")
+            {
+                result = '<br/> result of square is ' + (num1 * num1);
+            }
+            else 
+            {
+                result = '<br/> result of qube is ' + (num1 * num1 * num1);
+            }
+            // document.getElementById('output').innerHTML += result;
+            html('output',result);
+            console.log(result);
+          
+        }
+    </script>
+</body>
+</html>

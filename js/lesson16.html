@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="card shadow">
+                    <div class="card-header text-bg-primary">
+                        <h3>Dynamic html table generator</h3>
+                    </div>
+                    <div class="card-body">
+                        <form  method="post">
+                            <div class="mb-3">
+                                <input type="text" id="totalrow" class="validate form-control"  placeholder="No of rows">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="totalcolumn" class="validate form-control"  placeholder="No of columns">
+                            </div>
+                            <div class="mb-3">
+                                <select id="loop" class="validate form-select">
+                                    <option value="">select loop</option>
+                                    <option value="1">While loop</option>
+                                    <option value="2">For loop</option>
+                                    <option value="3">Do while loop</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="button" class="btn btn-primary" value="Generate table" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
+    <script src="myscript.js"></script>
+    <script>
+        var input_boxes = document.getElementsByClassName("validate");
+        //console.log(input_boxes);
+        for(var index=0;index<input_boxes.length;index++)
+        {
+            input_boxes[index].onblur = function(){
+                // alert(this.id);
+                // alert(this.value);
+            };
+        }
+        
+    </script>
+</body>
+</html>
