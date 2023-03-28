@@ -18,21 +18,32 @@
                     <div class="card-body">
                         <form  method="post">
                             <div class="mb-3">
-                                <input type="text" id="totalrow" class="validate form-control"  placeholder="No of rows">
+                                <input type="text" id="totalrow" class="validate form-control"  placeholder="No of rows" data-index="0" >
+                            </div>
+                            <div id="message-totalrow">
+
                             </div>
                             <div class="mb-3">
-                                <input type="text" id="totalcolumn" class="validate form-control"  placeholder="No of columns">
+                                <input type="text" id="totalcolumn" class="validate form-control"  placeholder="No of columns" data-index="1">
                             </div>
+                            <div id="message-totalcolumn">
+
+                            </div>
+                          
                             <div class="mb-3">
-                                <select id="loop" class="validate form-select">
+                                <select id="loop" class="validate form-select" data-index="2">
                                     <option value="">select loop</option>
                                     <option value="1">While loop</option>
                                     <option value="2">For loop</option>
                                     <option value="3">Do while loop</option>
                                 </select>
+                             
+                            </div>
+                            <div id="message-loop">
+
                             </div>
                             <div class="mb-3">
-                                <input type="button" class="btn btn-primary" value="Generate table" />
+                                <input type="button" class="btn btn-primary" value="Generate table" id="generate_table" disabled />
                             </div>
                         </form>
                     </div>
@@ -45,15 +56,60 @@
     <script src="myscript.js"></script>
     <script>
         var input_boxes = document.getElementsByClassName("validate");
+        var generate_table = document.getElementById("generate_table");
+
         //console.log(input_boxes);
+        var isvalid = [false,false,false];
         for(var index=0;index<input_boxes.length;index++)
         {
-            input_boxes[index].onblur = function(){
-                // alert(this.id);
-                // alert(this.value);
+                input_boxes[index].onblur = function(){
+                console.log(this.id);
+                console.log(this.value);
+                var messagebox = "message-" + this.id;
+                var InputIndex = parseInt(this.getAttribute("data-index"));
+                console.log(InputIndex);
+                if(this.value=="")
+                {
+                    document.getElementById(messagebox).innerHTML = "input can not be blank";
+                    document.getElementById(messagebox).className= "mb-3 text-bg-danger p-2";
+                    isvalid[InputIndex] = false;
+                }
+                else if(isNumeric(this.value)==false)
+                {
+                    document.getElementById(messagebox).innerHTML = "input must be numeric";
+                    document.getElementById(messagebox).className= "mb-3 text-bg-danger p-2";
+                    isvalid[InputIndex] = false;
+                }
+                else 
+                {
+                    document.getElementById(messagebox).innerHTML = "";
+                    document.getElementById(messagebox).className= "";
+                    isvalid[InputIndex] = true;
+                }
+                console.log(isvalid);
+                var isAllValid = true;
+                for(var position=0;position<isvalid.length;position++)
+                {
+                    if(isvalid[position]==false)
+                    {
+                        isAllValid = false;
+                        break;
+                    }
+                }
+                if(isAllValid==true)
+                {
+                    generate_table.removeAttribute("disabled");
+                }
+                else 
+                {
+                    generate_table.setAttribute("disabled",'disabled');
+                }
             };
         }
         
+        generate_table.onclick = function(){
+            alert("hi");
+        }
     </script>
 </body>
 </html>
