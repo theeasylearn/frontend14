@@ -50,6 +50,15 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body" id="mytable">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/16e157803b.js" crossorigin="anonymous"></script>
@@ -57,7 +66,10 @@
     <script>
         var input_boxes = document.getElementsByClassName("validate");
         var generate_table = document.getElementById("generate_table");
-
+        var mytable = document.getElementById("mytable");
+        var totalrow = document.getElementById("totalrow");
+        var totalcolumn = document.getElementById("totalcolumn");
+        var loop = document.getElementById("loop");
         //console.log(input_boxes);
         var isvalid = [false,false,false];
         for(var index=0;index<input_boxes.length;index++)
@@ -98,17 +110,45 @@
                 }
                 if(isAllValid==true)
                 {
-                    generate_table.removeAttribute("disabled");
+                    generate_table.removeAttribute('disabled');
                 }
                 else 
                 {
-                    generate_table.setAttribute("disabled",'disabled');
+                    generate_table.setAttribute('disabled','disabled');
                 }
             };
         }
         
         generate_table.onclick = function(){
-            alert("hi");
+          var output = "<table border='2' align='center' width='90%'>";
+          if(loop.value == "1")
+          {
+               var row=1;
+               while(row<=totalrow.value)
+               {
+                output=output + "<tr>";
+                var column=1;
+                while(column<=totalcolumn.value)
+                {
+                    output=output + `<td>${column}</td>`;
+                    column=column+1;
+                }
+                output=output + "</tr>";
+                row=row+1;
+               }
+               
+          }
+          else if(loop.value=="2")
+          {
+
+          }
+          else if(loop.value=="3")
+          {
+
+          }
+          output = output + "<table>";
+          console.log(output);
+          mytable.innerHTML=output;
         }
     </script>
 </body>
