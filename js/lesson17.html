@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red
+        {
+            background-color: red;
+            height:450px;
+            width:450px;
+           
+        }
+        #green
+        {
+            background-color: green;
+            height:350px;
+            width:350px;
+        }
+        #blue
+        {
+            background-color: blue;
+            height:200px;
+            width:200px;
+        }
+        #red, #green, #blue 
+        {
+            border-color:black;
+            padding:50px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="red">
+        <div id="green">
+            <div id="blue">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var red = document.getElementById("red");
+        var green = document.getElementById("green");
+        var blue = document.getElementById("blue");
+
+        red.addEventListener("click",function(){
+            alert("red is clicked");
+        },true);
+
+        green.addEventListener("click",function(){
+            alert("green is clicked");
+        },true);
+
+        blue.addEventListener("click",function(){
+            alert("blue is clicked");
+        },true);
+    </script>
+</body>
+</html>
