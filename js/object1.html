@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1st method to create object</h1>
+    <div id="root">
+
+    </div>
+
+    <script>
+        //1st method to create object
+        var course = {
+            name : 'React js',
+            duration : 30,
+            trainer: 'Ankit Patel',
+            isCertified : true
+        }
+        //display object in console 
+        console.log(course);
+        var root = document.getElementById("root");
+        root.innerHTML = "Name " + course.name;
+        root.innerHTML += "<br/> duration " + course.duration;  
+        root.innerHTML += "<br/> trainer " + course['trainer'];  
+        root.innerHTML += "<br/> isCertified " + course['isCertified'];  
+
+        course.location = "Bhavnagar";
+        course['pincode'] = 364001;
+        course['duration'] = 45;
+
+        root.innerHTML += "<br/> location " + course['location'];  
+        root.innerHTML += "<br/> pincode " + course['pincode'];  
+
+    </script>
+</body>
+</html>
