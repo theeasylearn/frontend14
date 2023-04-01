@@ -8,3 +8,20 @@
 4) create web page which has javascript to accept height, width, and length of room from user using input tag & bootstrap, handle onsubmit event and check all inputs are valid or nor not. if valid calculate and display volume of room otherwise display error.
 
 5) create web page which has javascript to pan card and aadhar card  if valid then allow use to see other page other wise display error message. 
+
+6) create template using 2nd method to store calculator object properties such as num1 and num2 and add following methods 
+        add 
+        sub 
+        mul
+        div 
+        and display result of of operations in 
+        display method 
+
+7) create template using 3rd method to store calculator object properties such as num1 and num2 and add following methods 
+        add 
+        sub 
+        mul
+        div 
+        and display result of of operations in 
+        display method 
+

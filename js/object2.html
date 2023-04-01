@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2nd method to create object</h1>
+    <div id="root">
+
+    </div>
+    <script>
+        "use strict";
+       //2nd method to create object 
+       var person = new Object({
+            name: '',
+            age: 0,
+            weight : 0.0,
+            gender : false,
+            display: function(){
+                var root = document.getElementById("root");
+                root.innerHTML += "<br/> Name " + this.name;
+                root.innerHTML += "<br/> Age " + this.age;
+                root.innerHTML += "<br/> Weight " + this.weight;
+                root.innerHTML += "<br/> gender " + this.gender;
+                root.innerHTML += "<hr/>";
+            }
+       });
+       var ankit = person;
+       ankit.name = "Ankit Patel";
+       ankit.age = 37;
+       ankit.weight = 75.22;
+       ankit.gender = true;
+       ankit.display();
+
+       var sahil = person;
+       sahil.name = "Sahil gohil";
+       sahil.age = 19;
+       sahil.weight = 66.25;
+       sahil.gender = true;
+       sahil.display();
+    </script>
+</body>
+</html>

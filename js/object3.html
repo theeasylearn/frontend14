@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2nd method to create object</h1>
+    <div id="root">
+
+    </div>
+    <script>
+        "use strict";
+        function Book(name,price,pages,author)
+        {
+            this.name = name,
+            this.price = price,
+            this.pages = pages,
+            this.author = author,
+            this.display = function()
+            {
+                var root = document.getElementById("root");
+                root.innerHTML += "<br/>  Name " + this.name;
+                root.innerHTML += "<br/>  price " + this.price;
+                root.innerHTML += "<br/>  pages " + this.pages;
+                root.innerHTML += "<br/>  author " + this.author + "<hr/>";
+            }
+        }
+
+        var b1 = new Book("the atomic habit",100,"James clear",99);
+        b1.display();
+
+        var b2 = new Book("the code",1100,'ankit patel',);
+        // b2.name = "the code";
+        // b2.price = 1100;
+        // b2.author = "Ankit Patel";
+        // b2.pages = 199;
+        
+        b2.display();
+    </script>
+</body>
+</html>
