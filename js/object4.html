@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 way to create class </h1>
+    <div id="root">
+
+    </div>
+    <script>
+        class Car
+        {
+            constructor(name,price,color)
+            {
+                this.name = name;
+                this.price = price;
+                this.color = color;
+                console.log("constructor called");
+                console.log(this);
+            }
+            display()
+            {
+                var root = document.getElementById("root");
+                root.innerHTML+= `<br/> Name ${this.name} <br/> Price = ${this.price} <br/> color = ${this.color}`;
+            }
+        }
+        //var object = new classname()
+        var c1 = new Car('Audi',6500000,'black');
+        c1.display();
+        var c2 = new Car('BMW',12500000,'white');
+        c2.display();
+    </script>
+</body>
+</html>

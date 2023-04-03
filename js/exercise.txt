@@ -25,3 +25,8 @@
         and display result of of operations in 
         display method 
 
+8) create simple interest calculator using ES6 technique & constructor with 3 argument
+amount,rate, year & has two method showSimpleInterest() & showCompoundInterest() to display 
+simple and compound interest.
+
+

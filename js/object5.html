@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 way to create class </h1>
+    <div id="area">
+
+    </div>
+    <div id="volume">
+
+    </div>
+    <script>
+        class box 
+        {
+            constructor(length,width,deapth)
+            {
+                this.length = length;
+                this.width = width;
+                this.deapth = deapth;
+            }
+            showArea()
+            {
+                var result = this.length * this.width; //local variable
+                document.getElementById("area").innerHTML += `<br/> Area = ${result}`;
+            }
+            showVolume()
+            {
+                var result = this.length * this.width * this.deapth; //local variable
+                document.getElementById("volume").innerHTML += `<br/> volume = ${result}`;
+            }
+        }
+        //var object = new classname()
+        var a1 = new box(10,20,30);
+        a1.showArea();
+        a1.showVolume();
+
+        var a2 = new box(20,30,40);
+        a2.showArea();
+        a2.showVolume();
+    </script>
+</body>
+</html>
