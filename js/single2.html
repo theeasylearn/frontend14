@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Single level inheritance</h1> <hr/>
+    <div id="root"></div>
+    <script src="common-class.js"></script>
+    <script>
+        class person extends IO
+        {
+            walk()
+            {
+               super.html('root','<br/> Person can walk');
+            }
+            talk()
+            {
+                super.html('root',"<br/> Person can talk");
+            }
+            eat()
+            {
+                super.html('root',"<br/> Person can eat");
+            }
+            WhatICanDo()
+            {
+                this.walk();
+                this.talk();
+                this.eat();
+            }
+        }
+        var p1 = new person();
+        p1.WhatICanDo();       
+    </script>
+</body>
+</html>

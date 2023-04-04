@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Single level inheritance</h1> <hr/>
+    <div id="root"></div>
+    <script>
+        //create class es6 
+        class person  //parent/root/base class 
+        {
+            walk()
+            {
+                document.getElementById("root").innerHTML += "<br/> Person can walk";
+            }
+            talk()
+            {
+                document.getElementById("root").innerHTML += "<br/> Person can talk";
+            }
+            eat()
+            {
+                document.getElementById("root").innerHTML += "<br/> Person can eat";
+            }
+            WhatICanDo()
+            {
+                this.walk();
+                this.talk();
+                this.eat();
+            }
+        }
+        //child/sub/dervied class 
+        class student extends person 
+        {
+            read()
+            {
+                document.getElementById("root").innerHTML += "<br/> Student can read";
+            }
+            write()
+            {
+                document.getElementById("root").innerHTML += "<br/> Student can write";
+            }
+            WhatICanDo()
+            {
+                // super.WhatICanDo();
+                
+                this.read();
+                this.write();
+                super.talk();
+                super.walk();
+                super.eat();
+            }
+        }
+        //create object
+        // var p1 = new person();
+        // p1.WhatICanDo();
+
+        var s1 = new student();
+        s1.WhatICanDo();
+    </script>
+</body>
+</html>
