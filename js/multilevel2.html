@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multilevel inheritance</h1>
+    <form action="">
+        <table border="2" align="center">
+            <tr>
+                <td>Enter bytes</td>
+                <td>
+                    <input type="number" id="bytes">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Convert" id="convert">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="output">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var output = document.getElementById('output');
+        var convert = document.getElementById('convert');
+        var bytes = document.getElementById('bytes');
+        class KB
+        {
+            constructor(bytes)
+            {
+                this.bytes = bytes;
+                console.log('constructor called for kb');
+            }
+            getkb()
+            {
+                let temp = this.bytes / 1024;
+                return temp;
+            }
+        }
+        class MB extends KB
+        {
+            constructor(bytes)
+            {
+                super(bytes); //calling parent class constructor
+                console.log('constructor called for mb');
+            }
+            getmb()
+            {
+                var temp = super.getkb() / 1024;
+                return temp.toFixed(2);
+            }
+        }
+        class GB extends MB 
+        {
+            constructor(bytes)
+            {
+                super(bytes);
+                console.log('constructor called for gb');
+            }
+            getgb()
+            {
+                var temp = super.getmb() / 1024;
+                return temp.toFixed(2);
+            }
+        }
+        //handle click event on button which has id convert
+        convert.onclick = function(){
+            // var k1 = new KB(bytes.value);
+            // var result = k1.getkb();
+            // output.innerHTML+= "<br/> Kilobytes = " + result;
+
+            // var m1 = new MB(bytes.value);
+            // var result = m1.getmb();
+            // output.innerHTML+= "<br/> megabytes = " + result;
+
+            var g1 = new GB(bytes.value);
+            var result = g1.getgb();
+            output.innerHTML+= "<br/> gigabytes = " + result;
+        };
+        
+    </script>
+</body>
+</html>
