@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create empty object  & check property exist in object or not</h1>
+    <p>use console to see output</p>
+    <script>
+        let user = {}; //empty object
+        let person = new Object(); //another way to create empty object
+        console.log(user);
+        console.log(person);
+        user.email = 'ankit3385@gmail.com';
+        user.password = '123123';
+        console.log('now user has ',user);
+        if(user.email === undefined)
+            alert('email key does not exists');
+        else 
+            alert(user.email);
+
+        if ('mobile' in user)
+            alert(user.mobile);
+        else 
+            alert('no such key mobile');
+    </script>
+</body>
+</html>
