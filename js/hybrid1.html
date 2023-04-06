@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hybrid inheritance</h1>
+    <div id="root"></div>
+    <script>
+      class MyMath
+      {
+        getSquare(number)
+        {
+            let square = number * number;
+            return square;
+        }
+        getPi()
+        {
+            let pi = 3.14;
+            return pi;
+        }
+      }
+      class Circle extends MyMath
+      {
+        constructor(radius)
+        {
+            super();
+            this.radius = radius;
+        }
+        getArea()
+        {
+            let pi = super.getPi();
+            let square = super.getSquare(this.radius);
+            let area = pi * square;
+            return area;
+        }
+      }
+      class Sphere extends Circle 
+      {
+            constructor(radius)
+            {
+                super(radius);
+            }
+            getArea()
+            {
+                let temp = super.getArea();
+                let area = 4 * temp;
+                return area;
+            }
+      }
+      class Cyliender extends MyMath
+      {
+            constructor(radius,height)
+            {
+                super();
+                this.radius = radius;
+                this.height = height;
+            }
+            getArea()
+            {
+                let pi = super.getPi();
+                let square = super.getSquare(this.radius);
+                let area = (2 * pi * this.radius * this.height) + (2 * pi * square);
+                return area;
+            }
+      }
+      //create object
+      var radius = parseInt(prompt("Enter radius",'0'));
+      var s1 = new Sphere(radius);
+      var root = document.getElementById("root");
+    //   var area = c1.getArea();
+      root.innerHTML = "area of Sphere " + s1.getArea();
+
+      
+    </script>
+</body>
+</html>
