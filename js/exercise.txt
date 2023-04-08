@@ -29,4 +29,5 @@
 amount,rate, year & has two method showSimpleInterest() & showCompoundInterest() to display 
 simple and compound interest.
 
-
+9) display 11 cricket player career one day statstics using array.map function and css 
+10) display 10 dish name,photo, price using array.map function and css 

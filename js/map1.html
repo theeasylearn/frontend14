@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p 
+        {
+            background-color: antiquewhite;
+            color:brown;
+            font-size: 2em;
+            padding:10px;
+            border:1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>map function</h1>
+    <div id="root">
+
+    </div>
+    <script>
+        var numbers = [1,2,3,4,5,6,7,8];
+        var root = document.getElementById("root");
+        numbers.map(function(value){
+            root.innerHTML+= `<p>${value}</p>`;
+        });
+    </script>
+</body>
+</html>

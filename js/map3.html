@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root 
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        p 
+        {
+            background-color: antiquewhite;
+            color:brown;
+            font-size: 2em;
+            padding:10px;
+            border:1px solid black;
+            margin-bottom: 10px;
+            width:33%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>map function</h1>
+    <div id="root">
+
+    </div>
+    <script>
+        var persons = [
+            {name:'ankit','age':37,'weight':75.25},
+            {name:'kartik','age':38,'weight':85.25},
+            {name:'darshak','age':35,'weight':98.25},
+        ];
+        var root = document.getElementById("root");
+        persons.map(function(person){
+            root.innerHTML+= `<p>Name ${person.name} <br/> Age ${person.age} <br/>   Weight ${person.weight}</p>`;
+        });
+    </script>
+</body>
+</html>

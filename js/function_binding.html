@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Binding</h1>
+    <p id="root"></p>
+    <script>
+        class Box 
+        {
+            constructor(height,width,deapth)
+            {
+                this.height = height;
+                this.width = width;
+                this.deapth = deapth;
+            }
+            getArea()
+            {
+                return this.height * this.width;
+            }
+            getVolume()
+            {
+                return this.height * this.width * this.deapth;
+            }
+
+        }
+        var height = parseInt(prompt("enter height"));
+        var width = parseInt(prompt("enter width"));
+        var deapth = parseInt(prompt("enter deapth"));
+
+        // var object = new classname
+        var b1 = new Box(height,width,deapth);
+        var root = document.getElementById("root");
+        // root.innerHTML= "area of box " + b1.getArea();
+        // root.innerHTML+= "<br/> Volume of box " + b1.getVolume();
+
+        var getArea = b1.getArea.bind(b1);
+        var getVolume = b1.getVolume.bind(b1);
+
+        root.innerHTML+= "area of box " + getArea();
+        root.innerHTML+= "<br/> Volume of box " + getVolume();
+    </script>
+</body>
+</html>
