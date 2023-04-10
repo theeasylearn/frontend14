@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Clone</h1>
+    <p>use console to see output</p>
+    <script>
+        var product = {
+            name:'IPhone - 14',
+            price:150000,
+            company:'Apple',
+            weight:450
+        };
+        // var copy_product = product;
+        // console.log('Product ', product);
+        // console.log('Copy Product ', copy_product);
+        // product.price = 299999;
+        // product.weight = 999;
+        // console.log('after change');
+        // console.log('Product ', product);
+        // console.log('Copy Product ', copy_product);
+
+        var clone_product = {}; //empty object
+        for(let property in product)
+        {
+            clone_product[property] = product[property];
+        }
+        product.price = 299999;
+        product.weight = 999;
+        console.log('after change');
+        console.log('Product ', product);
+        console.log('Clone Product ', clone_product);
+    </script>
+</body>
+</html>

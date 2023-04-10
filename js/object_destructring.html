@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Destructring</h1>
+    <p>use console to see output</p>
+    <script>
+        var product = {
+            name:'IPhone - 14',
+            price:150000,
+            company:'Apple'
+        }
+        // var name = product.name;
+        // var price = product.price;
+        // var company = product.company;
+        var {name:pname,price:pprice,company:pcompany} = product;
+
+        console.log(pname,pprice,pcompany);
+    </script>
+</body>
+</html>
